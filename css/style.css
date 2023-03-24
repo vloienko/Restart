@@ -363,6 +363,51 @@ body._lock {
   margin-top: -9px;
 }
 
+.repair-box {
+  padding: 32px 30px 37px 29px;
+  max-width: 280px;
+  height: 217px;
+  width: 100%;
+  border-radius: 5px;
+  background-color: #ffffff;
+}
+
+.repair-box__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 32px;
+}
+
+.repair-box__img {
+  margin-right: 7px;
+  margin-top: 4px;
+}
+
+.repair-box__text {
+  line-height: 138%;
+  color: #666666;
+}
+
+.repair-box__button {
+  display: inline-block;
+  min-width: 200px;
+  line-height: 19px;
+  text-align: center;
+  padding: 15px 15px 14px 15px;
+  border: 1px solid #CECECE;
+  border-radius: 100px;
+}
+
 .photo {
   background-image: url("../img/index/photo-bg.jpg");
   background-position: center;
@@ -383,7 +428,7 @@ body._lock {
 
 .photo__box-right {
   right: 0;
-  padding: 33px 20px 0px 41px;
+  padding: 33px 20px 0px 41px !important;
 }
 
 .photo__box {
@@ -429,51 +474,6 @@ body._lock {
 
 .photo__block {
   display: none;
-}
-
-.repair-box {
-  padding: 32px 30px 37px 29px;
-  max-width: 280px;
-  height: 217px;
-  width: 100%;
-  border-radius: 5px;
-  background-color: #ffffff;
-}
-
-.repair-box__info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  margin-bottom: 32px;
-}
-
-.repair-box__img {
-  margin-right: 7px;
-  margin-top: 4px;
-}
-
-.repair-box__text {
-  line-height: 138%;
-  color: #666666;
-}
-
-.repair-box__button {
-  display: inline-block;
-  min-width: 200px;
-  line-height: 19px;
-  text-align: center;
-  padding: 15px 15px 14px 15px;
-  border: 1px solid #CECECE;
-  border-radius: 100px;
 }
 
 .services {
@@ -1061,38 +1061,6 @@ body._lock {
     margin-top: 15px;
   }
 
-  .photo {
-    background-image: none;
-    height: auto;
-    margin-top: 127px;
-  }
-
-  .photo__box-left,
-  .photo .photo__box-right {
-    display: none;
-  }
-
-  .photo__box {
-    display: none;
-  }
-
-  .photo__block {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    padding: 0px 15px 0px 13px;
-    -webkit-column-gap: 20px;
-       -moz-column-gap: 20px;
-            column-gap: 20px;
-    row-gap: 10px;
-  }
-
   .repair-box {
     max-width: 327px;
     padding: 36px 39px 41px 38px;
@@ -1127,6 +1095,38 @@ body._lock {
     padding-bottom: 17px;
     margin-left: 12px;
     margin-top: 5px;
+  }
+
+  .photo {
+    background-image: none;
+    height: auto;
+    margin-top: 127px;
+  }
+
+  .photo__box-left,
+  .photo .photo__box-right {
+    display: none;
+  }
+
+  .photo__box {
+    display: none;
+  }
+
+  .photo__block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0px 15px 0px 13px;
+    -webkit-column-gap: 20px;
+       -moz-column-gap: 20px;
+            column-gap: 20px;
+    row-gap: 10px;
   }
 
   .services {
@@ -1325,13 +1325,6 @@ body._lock {
     padding-bottom: 220px;
   }
 
-  .photo__block {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-
   .repair-box {
     padding: 32px 32px 37px 34px;
     width: 290px;
@@ -1367,6 +1360,13 @@ body._lock {
     padding-bottom: 15px;
     margin-top: 0;
     padding-right: 17px;
+  }
+
+  .photo__block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 
   .services {
